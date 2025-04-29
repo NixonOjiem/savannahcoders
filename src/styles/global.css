@@ -25,7 +25,7 @@ body {
 .header a {
     /* Other styles (font-size, text-decoration, etc.) */
     color: #333; /* Fallback color for browsers not supporting gradient text */
-    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    background: linear-gradient(45deg, #f7f6c3, #d6f5f3);;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -59,7 +59,8 @@ body {
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
     border-radius: 1rem;
     transition: all 0.3s ease;
-    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    /* background: linear-gradient(45deg, #ff6b6b, #4ecdc4); */
+    background: linear-gradient(45deg, #f7f6c3, #d6f5f3);
 }
 
 /* Keep the rest of your CSS the same below this line */
