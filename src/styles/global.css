@@ -17,16 +17,9 @@ body {
     left: 0;
     width: 100%;
     padding: 1.5rem 5rem;
-    background: rgba(255, 255, 255, 0.1);
     display: flex;
-    justify-content: center; /* Changed to center */
+    justify-content: center; /* Center content horizontally */
     align-items: center;
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
-    transition: all 0.3s ease;
-    gap: 4rem; /* Space between logo and nav */
 }
 
 .logo {
@@ -35,16 +28,25 @@ body {
     font-weight: 700;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     letter-spacing: -0.5px;
-    position: absolute; /* Position absolutely */
-    left: 5rem; /* Align with header padding */
+    position: absolute;
+    left: 5rem;
 }
 
 .navbar {
     display: flex;
     justify-content: center;
-    gap: 2.5rem; /* Space between nav items */
+    gap: 2.5rem;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    border-radius: 1rem;
+    transition: all 0.3s ease;
 }
 
+/* Keep the rest of your CSS the same below this line */
 .navbar a {
     color: rgba(255, 255, 255, 0.8);
     font-size: 1.1rem;
@@ -75,7 +77,6 @@ body {
     width: 100%;
 }
 
-/* Keep the shimmer effect */
 .header::before {
     content: '';
     position: absolute;
