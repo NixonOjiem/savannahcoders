@@ -3,7 +3,7 @@ import React from 'react'
 function NavigationBar() {
     return (
         <header className="header">
-            <a href="#" className="logo">Savanahcoders</a>
+            <a href="#" className="logo">SavanahCoders</a>
             <nav className="navbar">
                 <a href="#">Home</a>
                 <a href="#">About</a>

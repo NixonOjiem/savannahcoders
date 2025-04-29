@@ -8,7 +8,7 @@
 
 body {
     min-height: 100vh;
-    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    /* background: linear-gradient(45deg, #ff6b6b, #4ecdc4); */
 }
 
 .header {
@@ -21,6 +21,21 @@ body {
     justify-content: center; /* Center content horizontally */
     align-items: center;
 }
+
+.header a {
+    /* Other styles (font-size, text-decoration, etc.) */
+    color: #333; /* Fallback color for browsers not supporting gradient text */
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+  }
+  
+  .header a:hover {
+    /* other hover effects */
+    color: #f00; /* this will override the gradient on hover*/
+  }
 
 .logo {
     color: rgba(255, 255, 255, 0.9);
@@ -44,17 +59,23 @@ body {
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
     border-radius: 1rem;
     transition: all 0.3s ease;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
 }
 
 /* Keep the rest of your CSS the same below this line */
 .navbar a {
-    color: rgba(255, 255, 255, 0.8);
+    color: #fff; /* Changed to solid white */
     font-size: 1.1rem;
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     transition: all 0.3s ease;
     position: relative;
+    /*override gradient text effects */
+    background: none !important;
+    -webkit-background-clip: initial;
+    background-clip: initial;
+    -webkit-text-fill-color: initial;
 }
 
 .navbar a::before {
@@ -91,8 +112,4 @@ body {
         transparent
     );
     transition: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header:hover::before {
-    left: 100%;
 }
