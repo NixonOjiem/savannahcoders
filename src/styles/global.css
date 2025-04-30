@@ -117,3 +117,185 @@ body {
 .logo {
     margin-left: auto; /* Pushes logo to the right */
 }
+
+/*Start of the mobile navigation bar*/
+
+
+.mobileNavigationBar {
+    display: none;
+    position: fixed;
+    bottom: 20px; /* Space from bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Fine-tune centering */
+    width: 90%; /* Width of the bar */
+    max-width: 500px; /* Optional: prevent it from getting too wide */
+    padding: 1rem 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 -8px 32px 0 rgba(31, 38, 135, 0.15);
+    border-radius: 1rem; /* Fully rounded corners */
+    transition: all 0.3s ease;
+    background: linear-gradient(45deg, #fffc51, #5dfff4);
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+.mobileNavbar {
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly */
+    align-items: center;
+    gap: 0.5rem; /* Reduced gap */
+    width: 100%;
+}
+
+.mobileNavigationBar a {
+    color: #0c0909; /* Changed to solid white */
+    font-size: 0.9rem;
+    text-decoration: none;
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    transition: all 0.3s ease;
+    flex: 1; /* Equal width items */
+    text-align: center; /* Center text */
+    white-space: nowrap; /* Prevent text wrapping */
+
+    /*override gradient text effects */
+    background: none !important;
+    -webkit-background-clip: initial;
+    background-clip: initial;
+    -webkit-text-fill-color: initial;
+}
+
+/*media querry for navigation*/
+@media (max-width: 1400px) {
+    .navbar {
+        display: flex;
+        gap: 2.5rem;
+        padding: 1rem 2rem;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(16px) saturate(180%);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+        border-radius: 1rem;
+        transition: all 0.3s ease;
+        background: linear-gradient(45deg, #fffc51, #5dfff4);
+        position: absolute; /* Add this for precise centering */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Adjust for exact center */
+        margin-left: 50px;
+    }
+  }
+  @media (max-width: 1400px) {
+    .navbar {
+        display: flex;
+        gap: 2.5rem;
+        padding: 1rem 2rem;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(16px) saturate(180%);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+        border-radius: 1rem;
+        transition: all 0.3s ease;
+        background: linear-gradient(45deg, #fffc51, #5dfff4);
+        position: absolute; /* Add this for precise centering */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Adjust for exact center */
+        margin-left: 50px;
+    }
+  }
+  @media (max-width: 1200px) {
+    .navbar {
+        display: flex;
+        gap: 2.5rem;
+        padding: 1rem 2rem;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(16px) saturate(180%);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+        border-radius: 1rem;
+        transition: all 0.3s ease;
+        background: linear-gradient(45deg, #fffc51, #5dfff4);
+        position: absolute; /* Add this for precise centering */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Adjust for exact center */
+        margin-left: 70px;
+    }
+  }
+
+  @media (max-width: 1150px) {
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 1.5rem 0rem;
+        display: flex;
+        justify-content: space-between; /* Distribute space between elements */
+        align-items: center;
+    }
+  }
+
+  @media (max-width: 1015px) {
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 1.5rem 0rem;
+        display: flex;
+        justify-content: space-between; /* Distribute space between elements */
+        align-items: center;
+    }
+    .navbar {
+        display: none;
+        gap: 2.5rem;
+        padding: 1rem 2rem;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(16px) saturate(180%);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+        border-radius: 1rem;
+        transition: all 0.3s ease;
+        background: linear-gradient(45deg, #fffc51, #5dfff4);
+        position: absolute; /* Add this for precise centering */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Adjust for exact center */
+    }
+    
+  }
+
+  @media (max-width: 1015px) {
+    /* Styles here apply when the viewport is 1015px or LESS */
+    .mobileNavigationBar {
+        display: flex; /* Change to flex for better layout control */
+        justify-content: center; /* Center inner items */
+         /* Space between navigation items */
+    }
+    .header {
+        padding: 1.5rem 5rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .mobileNavigationBar a {
+        font-size: 0.8rem; /* Even smaller text on tiny screens */
+        padding: 0.4rem 0.5rem;
+    }
+    
+    .mobileNavbar {
+        gap: 0.3rem;
+    }
+}
+
+
+
+
+/*media querry for navigation*/
+
+
+
+
+
