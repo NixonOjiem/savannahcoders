@@ -5,8 +5,7 @@ function MobileNavigationBar() {
         <footer className="mobileNavigationBar">
             <nav className="mobileNavbar">
                 <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Portfolio</a>
+                <a href="#">About us</a>
                 <a href="#">Services</a>
                 <a href="#">Contact</a>
             </nav>

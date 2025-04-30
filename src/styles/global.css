@@ -263,7 +263,6 @@ body {
         left: 50%; /* Center horizontally */
         transform: translateX(-50%); /* Adjust for exact center */
     }
-    
   }
 
   @media (max-width: 1015px) {
@@ -274,9 +273,8 @@ body {
          /* Space between navigation items */
     }
     .header {
-        padding: 1.5rem 5rem;
+        padding: 1.5rem 0.4rem;
     }
-
 }
 
 @media (max-width: 480px) {
@@ -284,7 +282,6 @@ body {
         font-size: 0.8rem; /* Even smaller text on tiny screens */
         padding: 0.4rem 0.5rem;
     }
-    
     .mobileNavbar {
         gap: 0.3rem;
     }
