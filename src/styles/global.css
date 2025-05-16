@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -205,10 +206,16 @@ body {
         margin-left: 50px;
     }
   }
+
+@media (max-width:1285px){
+    /* .header{padding: 1.5rem 0rem;} */
+    .navbar{gap:1rem;}
+  }
+
   @media (max-width: 1200px) {
     .navbar {
         display: flex;
-        gap: 2.5rem;
+        gap: 0.5rem;
         padding: 1rem 2rem;
         background: rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(16px) saturate(180%);
@@ -224,6 +231,10 @@ body {
     }
   }
 
+
+
+  
+
   @media (max-width: 1150px) {
     .header {
         position: fixed;
@@ -237,7 +248,7 @@ body {
     }
   }
 
-  @media (max-width: 1015px) {
+  @media (max-width: 1125px) {
     .header {
         position: fixed;
         top: 0;
@@ -265,7 +276,7 @@ body {
     }
   }
 
-  @media (max-width: 1015px) {
+  @media (max-width: 1125px) {
     /* Styles here apply when the viewport is 1015px or LESS */
     .mobileNavigationBar {
         display: flex; /* Change to flex for better layout control */
@@ -291,6 +302,35 @@ body {
 
 
 /*media querry for navigation*/
+
+
+/*Banner section*/
+.Banner{
+    /* background: linear-gradient(45deg, #fffc51, #5dfff4); */
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 200vh;
+    margin-top: 100px;
+}
+.Banner h2{
+    font-size: 8rem;
+    font-weight: 600;
+    margin: 0 auto;
+    text-align: center;
+    /* font-family: cursive; */
+    margin-top: 20vh;
+}
+
+@media (max-width: 1000px) {
+  .Banner h2{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 auto;
+    text-align: center;
+    /* font-family: cursive; */
+    margin-top: 20vh;
+}
+}
 
 
 
