@@ -30,7 +30,7 @@ function NavigationBar() {
                 <a href="#">Services</a>
                 <a href="#">Contact</a>
             </nav>
-            <p className='logo'>Logo</p>
+            <p className='logo text-yellow-500 text-bold'>Logo</p>
         </header>
 
     );

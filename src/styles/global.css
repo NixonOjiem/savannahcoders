@@ -21,6 +21,7 @@ body {
     display: flex;
     justify-content: space-between; /* Distribute space between elements */
     align-items: center;
+    z-index: 1000; /* Ensure it stays on top */
 }
 
 .header a {
@@ -153,7 +154,7 @@ body {
 }
 
 .mobileNavigationBar a {
-    color: #ffffff; /* Changed to solid white */
+    color: #FFD700; /* Changed to solid white */
     font-size: 0.9rem;
     text-decoration: none;
     padding: 0.5rem 0.7rem;
@@ -164,7 +165,7 @@ body {
     flex: 1; /* Equal width items */
     text-align: center; /* Center text */
     white-space: nowrap; /* Prevent text wrapping */
-
+    z-index: 1000; /* Ensure it stays on top */
     /*override gradient text effects */
     background: none !important;
     -webkit-background-clip: initial;
@@ -311,31 +312,54 @@ body {
 
 
 /*Banner section*/
-.Banner{
-    /* background: linear-gradient(45deg, #fffc51, #5dfff4); */
-    background-color: rgb(255, 255, 255);
+.Banner {
+    /* background: linear-gradient(to bottom right, #fff 50%, #fffc51 50%); */
     width: 100%;
-    height: 200vh;
-    margin-top: 100px;
+    height: 90vh;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    text-align: center;
 }
-.Banner h2{
+
+.Banner h2 {
     font-size: 8rem;
     font-weight: 600;
-    margin: 0 auto;
-    text-align: center;
-    /* font-family: cursive; */
-    margin-top: 20vh;
+    margin: 0;
+    z-index: 10;
+    color: #FFD700;
 }
+
 
 @media (max-width: 1000px) {
   .Banner h2{
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: 600;
     margin: 0 auto;
     text-align: center;
     /* font-family: cursive; */
-    margin-top: 20vh;
+    
 }
+
+
+/* aBOUT US section */
+}
+.InformationCompoent{
+ height: 100vh;
+ background-color: rgb(255, 255, 255);
+}
+
+.Heading{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.Introduction-Text{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
 }
 
 
