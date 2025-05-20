@@ -323,7 +323,7 @@ body {
 }
 
 .Banner h2 {
-    font-size: 8rem;
+    font-size: 2rem;
     font-weight: 600;
     margin: 0;
     z-index: 10;
@@ -345,8 +345,16 @@ body {
 /* aBOUT US section */
 }
 .InformationCompoent{
- height: 100vh;
+ height: auto;
  background-color: rgb(255, 255, 255);
+}
+
+.InformationCompoent h2{
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 0;
+    z-index: 10;
+    color: #FFD700;
 }
 
 .Heading{
@@ -361,6 +369,65 @@ body {
     text-align: center;
     justify-content: center;
 }
+
+.Information-Content{
+    display: flex;
+    flex-direction: row;
+}
+
+.FontawsoemIicons{
+    font-size: 4em;
+    color: #FFD700;
+}
+
+
+/*end of banner section*/
+
+/* start of team member section */
+.TheTeam{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+.TheTeam h2{
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 0;
+    z-index: 10;
+    color: #FFD700;
+}
+.TeamMember {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10vh;
+    
+}
+
+.TeamMemberPicture img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.TeamMemberDetails {
+    max-width: 60%;
+}
+
+/* Default: Picture left, details right */
+.TeamMember:nth-child(odd) {
+    flex-direction: row;
+}
+
+/* Alternate: Picture right, details left */
+.TeamMember:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* End of team member section */
 
 
 

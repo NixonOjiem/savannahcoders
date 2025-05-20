@@ -11,7 +11,7 @@ function Banner() {
     return (
         <div className='Banner'>
             <Image src={myImage} alt="Banner Image" layout="fill" objectFit="cover" />
-            <h2 className={greatVibes.className}>SavanaTech</h2>
+            <h2 className={greatVibes.className}>Where Design Meets Impact. Your Vision, Our Code.</h2>
         </div>
     );
 }
