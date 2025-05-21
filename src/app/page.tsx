@@ -9,6 +9,7 @@ import { Parallax } from "react-scroll-parallax";
 import TheTeam from "@/components/TheTeam";
 import OurStats from "@/components/OurStats";
 import OurPricing from "@/components/OurPricing";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -34,6 +35,10 @@ export default function Home() {
 
         <Parallax speed={20}>
           <OurPricing />
+        </Parallax>
+
+        <Parallax speed={-30}>
+          <Footer />
         </Parallax>
 
         <MobileNavigationBar />
