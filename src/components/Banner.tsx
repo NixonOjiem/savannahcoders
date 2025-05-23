@@ -10,8 +10,17 @@ const greatVibes = Great_Vibes({
 function Banner() {
     return (
         <div className='Banner'>
-            <Image src={myImage} alt="Banner Image" layout="fill" objectFit="cover" />
-            <h2 className={greatVibes.className}>Where Design Meets Impact. Your Vision, Our Code.</h2>
+            <div> {/* Wrap Image in a div for better z-index control */}
+                <Image
+                    src={myImage}
+                    alt="Banner Image"
+                    layout="fill"
+                    objectFit="cover"
+                />
+            </div>
+            <h2 className={greatVibes.className}>
+                Where Design Meets Impact. Your Vision, Our Code.
+            </h2>
         </div>
     );
 }

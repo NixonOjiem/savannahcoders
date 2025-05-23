@@ -10,36 +10,38 @@ import TheTeam from "@/components/TheTeam";
 import OurStats from "@/components/OurStats";
 import OurPricing from "@/components/OurPricing";
 import Footer from "@/components/Footer";
+import TestingComponent from "@/components/TestingComponent";
 
 export default function Home() {
   return (
     <ParallaxProvider>
       <div>
         <NavigationBar />
-        {/* <Parallax speed={-50}>
-          <Banner />
-        </Parallax> */}
-
         <Banner />
-        <Parallax speed={-30}>
+        <InformationComponent />
+        {/* <Parallax speed={-30}>
           <InformationComponent />
-        </Parallax>
+        </Parallax> */}
 
         <Parallax speed={-1}>
           <TheTeam />
         </Parallax>
 
-        <Parallax speed={20}>
-          <OurStats />
-        </Parallax>
+
+        <OurStats />
+
 
         <Parallax speed={20}>
           <OurPricing />
         </Parallax>
 
-        <Parallax speed={-30}>
-          <Footer />
-        </Parallax>
+        {/* <Parallax speed={-30}>
+          <TestingComponent />
+        </Parallax> */}
+
+
+        <Footer />
+
 
         <MobileNavigationBar />
       </div>

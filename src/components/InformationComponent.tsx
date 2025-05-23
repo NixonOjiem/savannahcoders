@@ -7,7 +7,7 @@ import { faTools } from '@fortawesome/free-solid-svg-icons';
 
 function InformationComponent() {
     return (
-        <div className="InformationCompoent" style={{ padding: "128px 16px" }}>
+        <div className="InformationCompoent">
             <h2 className="Heading">About Us</h2>
             <br />
             <p className="Introduction-Text">Key features of our company</p>
