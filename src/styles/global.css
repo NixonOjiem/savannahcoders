@@ -366,10 +366,18 @@ body {
 
 /* aBOUT US section */
 }
+.parallax-layer{
+    position: relative; /* Ensure z-index works */
+    z-index: -1;
+    background-color: transparent !important;
+}
+
 .InformationCompoent{
  height: auto;
  padding: 0;
  background-color: rgb(255, 255, 255);
+ margin-left: 5vw;
+ margin-right: 5vw;
 
 }
 
@@ -397,6 +405,12 @@ body {
 .Information-Content{
     display: flex;
     flex-direction: row;
+}
+.Information-Content-Item{
+    width: 50%;
+    padding: 2rem;
+    text-align: justify;
+    justify-content: justify;
 }
 
 .FontawsoemIicons{
@@ -506,11 +520,17 @@ body {
     transform: skewY(-3deg);
 }
 
-.Header-encloser{
+.Header-encloser {
     margin: 30px;
     text-align: center;
     justify-content: center;
     
+}
+
+.Footer{
+    width: 100%;
+    background-color: #fff;
+    margin-top: 10vh;
 }
 
 /* End of the pricing Section section */

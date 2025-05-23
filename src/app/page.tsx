@@ -18,12 +18,12 @@ export default function Home() {
       <div>
         <NavigationBar />
         <Banner />
-        <InformationComponent />
-        {/* <Parallax speed={-30}>
+        {/* <InformationComponent /> */}
+        <Parallax speed={-10} className="parallax-layer">
           <InformationComponent />
-        </Parallax> */}
+        </Parallax>
 
-        <Parallax speed={-1}>
+        <Parallax speed={20}>
           <TheTeam />
         </Parallax>
 
