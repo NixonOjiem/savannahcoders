@@ -4,10 +4,25 @@ import { faClock } from "@fortawesome/free-solid-svg-icons";
 import { faFire } from '@fortawesome/free-solid-svg-icons';
 import { faPalette } from '@fortawesome/free-solid-svg-icons';
 import { faTools } from '@fortawesome/free-solid-svg-icons';
+import AOS from 'aos'; // Import AOS
+import 'aos/dist/aos.css';
+import { useEffect } from 'react'; // Import useEffect
 
 function InformationComponent() {
+    // Initialize AOS in useEffect
+    useEffect(() => {
+        AOS.init({
+            duration: 1500,
+            // easing: 'linear',
+            once: false, // Ensure animation only happens once
+            mirror: true // Repeat animation when scrolling back up
+        });
+    }, []);
+
     return (
-        <div className="InformationCompoent">
+        <div className="InformationCompoent"
+            data-aos='zoom-in-up'
+        >
             <h2 className="Heading">About Us</h2>
             <br />
             <p className="Introduction-Text">Key features of our company</p>

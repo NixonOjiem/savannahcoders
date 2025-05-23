@@ -432,7 +432,7 @@ body {
     padding-left: 5vw;
     padding-right: 5vw;
     position: relative;
-    margin-top: 30vh;
+    margin-top: 10vh;
     transform: skewY(-5deg); /* Adjust the angle */
     transform-origin: top left; /* Ensures the skew starts from the top */
 }
@@ -496,10 +496,6 @@ body {
     transform-origin: top left;
 }
 
-/* This ensures child elements counteract the skew */
- /* .Pricin-Container * {
-    transform: skewY(-3deg);
-} */
  .Pricin-Container > * {
     transform: skewY(-3deg);
 } 
@@ -527,19 +523,29 @@ body {
     
 }
 
-.Footer{
-    width: 100%;
-    background-color: #fff;
-    margin-top: 10vh;
-}
+
 
 /* End of the pricing Section section */
+
+/* Our Stats Section */
+.OurStats{
+    min-height: 20vh;
+}
+
+/* Start of the temprary section */
 .v-shaped {
             width: 100%;
             height: 400px;
             background-color: #3498db;
             clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
         }
+/*Start of the Footer Section*/
+.Footer{
+    width: 100%;
+    background-color: #fff;
+    margin-top: 10vh;
+    min-height: 25vh;
+}
 
 
 
