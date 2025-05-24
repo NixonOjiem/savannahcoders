@@ -9,7 +9,8 @@ function OurStats() {
     return (
         <>
             <div className='OurStats'>
-                <h1 className='bg-white text-black py-16 flex justify-center font-bold'>Our Stats</h1>
+                <h1 className="bg-white text-[#FFD700] py-16 flex justify-center font-bold text-5xl">Our Stats</h1>
+
                 <div className="bg-white text-black py-16 flex justify-center">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center" ref={ref}>
                         <div>

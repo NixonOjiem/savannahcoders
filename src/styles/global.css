@@ -6,6 +6,10 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 
 body {
     min-height: 100vh;
@@ -386,7 +390,7 @@ body {
     font-weight: 600;
     margin: 0;
     z-index: 10;
-    color: #FFD700;
+    color: #000000;
 }
 
 .Heading{
@@ -484,7 +488,7 @@ body {
 
 /* Start of the pricing Section section */
 .Pricin-Container {
-    background-color: rgb(255, 244, 86);
+    background-color: #FFD700;
     color: black;
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -526,6 +530,25 @@ body {
 
 
 /* End of the pricing Section section */
+
+
+/*Start of Our services section*/
+
+/*End Our services section*/
+.OurServices{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.OurServices-Card{
+    margin: 5vh;
+}
+
+.OurServices-Header{
+    font-size: 24px;
+    font-weight: bold; /* Equivalent to font-bold */
+}
 
 /* Our Stats Section */
 .OurStats{

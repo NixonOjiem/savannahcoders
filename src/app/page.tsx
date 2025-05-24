@@ -11,6 +11,7 @@ import OurStats from "@/components/OurStats";
 import OurPricing from "@/components/OurPricing";
 import Footer from "@/components/Footer";
 import TestingComponent from "@/components/TestingComponent";
+import OurServices from "@/components/OurServices";
 
 export default function Home() {
   return (
@@ -23,12 +24,18 @@ export default function Home() {
           <InformationComponent />
         </Parallax>
 
-        <Parallax speed={20}>
+        <Parallax speed={15}>
           <TheTeam />
         </Parallax>
 
+        <Parallax speed={40}>
+          <OurServices />
+        </Parallax>
 
-        <OurStats />
+
+        <Parallax speed={15}>
+          <OurStats />
+        </Parallax>
 
 
         <Parallax speed={20}>
